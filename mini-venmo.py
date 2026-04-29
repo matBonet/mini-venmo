@@ -366,5 +366,11 @@ class TestAddFriend(unittest.TestCase):
         self.assertIn(self.bobby._feed[0], self.carol._feed)
 
 
+class TestMiniVenmoRun(unittest.TestCase):
+
+    def test_run_completes_without_error(self):
+        MiniVenmo.run()
+
+
 if __name__ == '__main__':
     unittest.main()
